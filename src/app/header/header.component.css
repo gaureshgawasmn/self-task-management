@@ -1,0 +1,88 @@
+/* Header Styling */
+.app-header {
+  background-color: #21201b; /* Dark background matching form */
+  color: #f2e090; /* Yellow text for header */
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+  border-bottom: 2px solid #f2e090;
+}
+
+.app-header .header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.app-header .app-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f2e090;
+  margin: 0;
+}
+
+.app-header .header-info {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.app-header .info-trigger {
+  font-size: 1.1rem;
+  color: #f2e090;
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid #f2e090;
+  border-radius: 0.25rem;
+  margin-right: 1rem; /* Space between info and README link */
+}
+
+.app-header .info-trigger:hover {
+  background-color: #f2e090;
+  color: #2c2a21;
+}
+
+.app-header .info-modal {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #21201b;
+  color: #fdf8df;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  display: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+  max-width: 300px;
+  margin-top: 0.5rem;
+  z-index: 100;
+}
+
+.app-header .info-trigger:hover + .info-modal {
+  display: block; /* Show the modal when the user hovers over the info trigger */
+}
+
+.app-header .info-modal p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.app-header .readme-link {
+  font-size: 1rem;
+  color: #f2e090;
+  text-decoration: none;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid #f2e090;
+  border-radius: 0.25rem;
+}
+
+.app-header .readme-link:hover {
+  background-color: #f2e090;
+  color: #2c2a21;
+}
+
+.app-header .header-info a {
+  margin-right: 0.5rem;
+}

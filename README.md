@@ -1,27 +1,59 @@
-# SelfTaskManagement
+# Self Task Management App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
+Welcome to the **Self Task Management App**! This is a simple and effective web application that allows you to manage your tasks by creating, updating, marking as in-progress, or done, and deleting tasks once they are completed. The app is fully hosted and works with your browser's `localStorage` to store tasks, ensuring your tasks persist even when you refresh the page.
 
-## Development server
+You can access the live application here:  
+[**Self Task Management App**](https://gg-self-task-management.web.app/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Create Tasks**: Easily add tasks with a title and description.
+- **Mark Tasks as In Progress**: Update tasks to show their current status.
+- **Mark Tasks as Done**: Once a task is completed, mark it as done.
+- **Delete Tasks**: Delete completed tasks to keep your task list tidy.
+- **Persistent Storage**: Tasks are stored in `localStorage`, so they remain even after a page refresh.
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## How It Works
 
-## Running unit tests
+1. **Add New Task**:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+   - Click the "Add Task" button and provide a task title and description.
+   - The task will be saved to `localStorage` automatically.
 
-## Running end-to-end tests
+2. **Manage Tasks**:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   - **Mark as In Progress**: Tasks can be marked as in progress when you're working on them.
+   - **Mark as Done**: Once finished, mark the task as done.
+   - **Delete Task**: Once a task is done, you can delete it to remove it from the task list.
 
-## Further help
+3. **Persistence with LocalStorage**:
+   - Your tasks will remain even if you close the app or refresh the page. The app uses your browser's `localStorage` to store and retrieve tasks.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+## Technologies Used
+
+- **Frontend**:
+  - Angular , HTML, CSS for building the user interface.
+- **LocalStorage**: For storing tasks locally in the browser.
+- **Firebase Hosting**: The app is hosted on Firebase to provide fast, secure, and reliable hosting.
+
+---
+
+## Contributing
+
+This project is open for contributions! If you'd like to improve the app, feel free to fork the repository and submit a pull request.
+
+---
+
+## Contact
+
+For any questions or feedback, feel free to contact me at:  
+- **Email**: gaureshgawasmn@gmail.com
+- **GitHub**: [https://github.com/gaureshgawasmn](https://github.com/gaureshgawasmn)
+
+---
