@@ -14,13 +14,10 @@ import { TasksService } from '../../tasks.service';
 })
 export class TaskItemComponent {
   task = input.required<Task>();
-  // private tasksService = inject(TasksService);
-
-  // constructor(private tasksService: TasksService) {}
 
   constructor(@Inject(TaskServiceToken) private tasksService: TasksService) {}
   taskStatusOptions = inject(TASK_STATUS_OPTIONS);
-  
+
   taskStatus = computed(() => {
     switch (this.task().status) {
       case 'OPEN':
@@ -36,5 +33,9 @@ export class TaskItemComponent {
 
   onChangeTaskStatus(taskId: string, status: string) {
     this.tasksService.updateTaskStatus(taskId, status);
+  }
+
+  onDeleteTask(taskId: string) {
+    this.tasksService.deleteTask(taskId);
   }
 }

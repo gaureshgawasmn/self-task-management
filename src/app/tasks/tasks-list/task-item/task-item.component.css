@@ -92,3 +92,35 @@ button:hover,
 button:active {
   color: #f8d63c;
 }
+
+.delete-button {
+  font: inherit;
+  border: none;
+  background-color: #575754;
+  color: #fefefe;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.1s ease;
+}
+
+/* Hover state */
+.delete-button:hover {
+  background-color: #434341; /* Lighter shade of the background color */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Active state */
+.delete-button:active {
+  background-color: #333332; /* Darker shade when button is clicked */
+  transform: translateY(0); /* Button goes back to its original position */
+}
+
+/* Focus state (for accessibility) */
+.delete-button:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 0 2px rgba(95, 158, 160, 0.8); /* Custom outline for focus */
+}

@@ -8,14 +8,19 @@
     <p>{{ taskStatus() }}</p>
   </header>
   <p>{{ task().description }}</p>
+
   <form (ngSubmit)="onChangeTaskStatus(task().id, status.value)">
+    @if(task().status === 'DONE'){
+    <button class="delete-button" (click)="onDeleteTask(task().id)">Delete Task</button>
+    }
     <select #status>
       @for (option of taskStatusOptions; track option.value) {
       <option [value]="option.value" [selected]="task().status === option.taskStatus">{{option.text}}</option>
       }
     </select>
     <p>
-      <button>Change Status</button>
+      <button type="submit">Change Status</button>
     </p>
   </form>
+
 </article>
